@@ -1,0 +1,24 @@
+uuid: dbbb2f6b-b0b1-4471-95c7-208eb779d453
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.field_media_namecoach_emailkey
+field_name: field_media_namecoach_emailkey
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

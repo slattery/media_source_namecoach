@@ -1,0 +1,22 @@
+uuid: 41cf010c-36b4-4201-95b9-3a216ad4632c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_namecoach_emailkey
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.nc_remote.field_media_namecoach_emailkey
+field_name: field_media_namecoach_emailkey
+entity_type: media
+bundle: nc_remote
+label: NameCoach
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

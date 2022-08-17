@@ -1,0 +1,59 @@
+uuid: e8564c7c-0308-4b94-839f-175c919eb246
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.nc_remote.field_media_namecoach_audio_url
+    - field.field.media.nc_remote.field_media_namecoach_email
+    - field.field.media.nc_remote.field_media_namecoach_emailkey
+    - field.field.media.nc_remote.field_media_namecoach_firstname
+    - field.field.media.nc_remote.field_media_namecoach_iframe_txt
+    - field.field.media.nc_remote.field_media_namecoach_lastname
+    - field.field.media.nc_remote.field_media_namecoach_notes
+    - field.field.media.nc_remote.field_media_namecoach_page_link
+    - field.field.media.nc_remote.field_media_namecoach_phonetic
+    - field.field.media.nc_remote.field_media_namecoach_photo_url
+    - field.field.media.nc_remote.field_media_namecoach_player_txt
+    - field.field.media.nc_remote.field_media_namecoach_pronouns
+    - field.field.media.nc_remote.field_media_namecoach_uuid
+    - image.style.medium
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+  module:
+    - image
+id: media.nc_remote.media_library
+targetEntityType: media
+bundle: nc_remote
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_namecoach_audio_url: true
+  field_media_namecoach_email: true
+  field_media_namecoach_emailkey: true
+  field_media_namecoach_firstname: true
+  field_media_namecoach_iframe_txt: true
+  field_media_namecoach_lastname: true
+  field_media_namecoach_notes: true
+  field_media_namecoach_page_link: true
+  field_media_namecoach_phonetic: true
+  field_media_namecoach_photo_url: true
+  field_media_namecoach_player_txt: true
+  field_media_namecoach_pronouns: true
+  field_media_namecoach_uuid: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

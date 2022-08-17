@@ -1,0 +1,7 @@
+name: Media Source NameCoach
+description: 'Media source and media type for the namecoach API.'
+type: module
+package: Media
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:media

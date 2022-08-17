@@ -1,0 +1,29 @@
+uuid: 97b7ea5a-d4a4-4770-ae10-0cae7022f796
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_namecoach_mref
+    - media.type.nc_remote
+    - node.type.yse_detail_profile
+id: node.yse_detail_profile.field_namecoach_mref
+field_name: field_namecoach_mref
+entity_type: node
+bundle: yse_detail_profile
+label: 'NameCoach Record'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      nc_remote: nc_remote
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

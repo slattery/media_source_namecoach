@@ -1,0 +1,22 @@
+uuid: c14df811-bc8d-4578-afb1-7a1fd4b4a690
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_namecoach_notes
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.nc_remote.field_media_namecoach_notes
+field_name: field_media_namecoach_notes
+entity_type: media
+bundle: nc_remote
+label: media_namecoach_notes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+uuid: b591d5f5-8388-4052-bc04-4c6c9ea4501e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.field_media_namecoach_email
+field_name: field_media_namecoach_email
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

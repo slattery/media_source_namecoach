@@ -1,0 +1,22 @@
+uuid: f34f19a0-3db9-4e95-b1d9-0099caaecd79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_namecoach_phonetic
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.nc_remote.field_media_namecoach_phonetic
+field_name: field_media_namecoach_phonetic
+entity_type: media
+bundle: nc_remote
+label: media_namecoach_phonetic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

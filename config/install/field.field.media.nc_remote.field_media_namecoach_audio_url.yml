@@ -1,0 +1,22 @@
+uuid: a7fb4b15-37e6-43c1-bf16-cdb17dc7df42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_namecoach_audio_url
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.nc_remote.field_media_namecoach_audio_url
+field_name: field_media_namecoach_audio_url
+entity_type: media
+bundle: nc_remote
+label: media_namecoach_audio_url
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

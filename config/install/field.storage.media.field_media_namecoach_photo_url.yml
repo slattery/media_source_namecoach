@@ -1,0 +1,24 @@
+uuid: ee0e8445-2c5c-4f3b-bc6c-89e4ec48b9b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.field_media_namecoach_photo_url
+field_name: field_media_namecoach_photo_url
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 7045338c-0cec-43c4-9e96-e478bf512a5e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_source_namecoach
+  enforced:
+    module:
+      - media_source_namecoach
+id: nc_remote
+label: NameCoach
+description: 'Recording, Phonetics, and Pronouns from NameCoach'
+source: namecoach
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_namecoach_emailkey
+field_map:
+  first_name: field_media_namecoach_firstname
+  last_name: field_media_namecoach_lastname
+  email: field_media_namecoach_email
+  recording_uuid: field_media_namecoach_uuid
+  recording_link: field_media_namecoach_audio_url
+  phonetic_spelling: field_media_namecoach_phonetic
+  notes: field_media_namecoach_notes
+  gender_pronouns: field_media_namecoach_pronouns
+  photo: field_media_namecoach_photo_url
+  embed_image: field_media_namecoach_player_txt
+  embed_iframe: field_media_namecoach_iframe_txt
+  name_badge_link: field_media_namecoach_page_link

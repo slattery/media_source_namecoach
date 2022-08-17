@@ -1,0 +1,23 @@
+uuid: b8dbcf5f-86f6-4e14-a2b7-543ec5cf13d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+  enforced:
+    module:
+      - media_source_namecoach
+id: node.field_namecoach_mref
+field_name: field_namecoach_mref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: true
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 0f5f42d1-8f50-4e82-83b3-62749a5b691a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_namecoach_firstname
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.nc_remote.field_media_namecoach_firstname
+field_name: field_media_namecoach_firstname
+entity_type: media
+bundle: nc_remote
+label: media_namecoach_firstname
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

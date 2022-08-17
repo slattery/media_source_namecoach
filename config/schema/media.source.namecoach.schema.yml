@@ -1,0 +1,20 @@
+media.source.namecoach:
+  type: media.source.field_aware
+  label: '"NameCoach" media source configuration'
+
+media_source_namecoach.settings:
+  type: config_object
+  label: 'Namecoach Media Source'
+  mapping:
+    nc_apikey:
+      type: text
+      label: 'NameCoach API Key'
+
+field.formatter.settings.namecoach_player:
+  type: mapping
+  label: 'Field display format settings'
+  mapping:
+    namecoach_format:
+      type: string
+      label: 'NameCoach Display'
+

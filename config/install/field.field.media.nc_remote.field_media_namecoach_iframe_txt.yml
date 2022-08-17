@@ -1,0 +1,22 @@
+uuid: afe4d008-41ea-4217-b15b-86174f9ace32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_namecoach_iframe_txt
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.nc_remote.field_media_namecoach_iframe_txt
+field_name: field_media_namecoach_iframe_txt
+entity_type: media
+bundle: nc_remote
+label: media_namecoach_iframe_txt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

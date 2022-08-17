@@ -1,0 +1,24 @@
+uuid: 4fe142b5-5802-45a9-a933-1ac4e5fff3de
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.field_media_namecoach_uuid
+field_name: field_media_namecoach_uuid
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

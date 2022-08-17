@@ -1,0 +1,55 @@
+uuid: 58b256df-d689-41f8-8bd2-d67e2535f47c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.nc_remote.field_media_namecoach_audio_url
+    - field.field.media.nc_remote.field_media_namecoach_email
+    - field.field.media.nc_remote.field_media_namecoach_emailkey
+    - field.field.media.nc_remote.field_media_namecoach_firstname
+    - field.field.media.nc_remote.field_media_namecoach_iframe_txt
+    - field.field.media.nc_remote.field_media_namecoach_lastname
+    - field.field.media.nc_remote.field_media_namecoach_notes
+    - field.field.media.nc_remote.field_media_namecoach_page_link
+    - field.field.media.nc_remote.field_media_namecoach_phonetic
+    - field.field.media.nc_remote.field_media_namecoach_photo_url
+    - field.field.media.nc_remote.field_media_namecoach_player_txt
+    - field.field.media.nc_remote.field_media_namecoach_pronouns
+    - field.field.media.nc_remote.field_media_namecoach_uuid
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.nc_remote.media_library
+targetEntityType: media
+bundle: nc_remote
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_namecoach_audio_url: true
+  field_media_namecoach_email: true
+  field_media_namecoach_emailkey: true
+  field_media_namecoach_firstname: true
+  field_media_namecoach_iframe_txt: true
+  field_media_namecoach_lastname: true
+  field_media_namecoach_notes: true
+  field_media_namecoach_page_link: true
+  field_media_namecoach_phonetic: true
+  field_media_namecoach_photo_url: true
+  field_media_namecoach_player_txt: true
+  field_media_namecoach_pronouns: true
+  field_media_namecoach_uuid: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

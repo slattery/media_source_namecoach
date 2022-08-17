@@ -1,0 +1,14 @@
+uuid: f95a0af0-0399-4457-a1d8-7769f69087b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+id: media.nc_remote
+target_entity_type_id: media
+target_bundle: nc_remote
+default_langcode: site_default
+language_alterable: false

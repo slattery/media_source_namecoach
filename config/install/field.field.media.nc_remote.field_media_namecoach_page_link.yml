@@ -1,0 +1,26 @@
+uuid: 6fe47937-5343-4fc7-9395-fe1a53daebcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_namecoach_page_link
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+  module:
+    - link
+id: media.nc_remote.field_media_namecoach_page_link
+field_name: field_media_namecoach_page_link
+entity_type: media
+bundle: nc_remote
+label: media_namecoach_page_link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link
