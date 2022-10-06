@@ -12,6 +12,7 @@ use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\media\MediaInterface;
 use Drupal\media\MediaSourceBase;
+use Drupal\media\MediaSourceFieldConstraintsInterface;
 use Drupal\media\MediaTypeInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
@@ -33,7 +34,7 @@ use Drupal\Core\Field\FieldTypePluginManagerInterface;
  *   }
  * )
  */
-class Namecoach extends MediaSourceBase {
+class Namecoach extends MediaSourceBase implements MediaSourceFieldConstraintsInterface {
 
    /**
    * Namecoach attributes.
@@ -154,7 +155,11 @@ class Namecoach extends MediaSourceBase {
         return $data['notes'];
  
       case 'gender_pronouns':
-        return $data['custom_objects']['gender_pronouns'];
+        if ($data['custom_objects'] and $data['custom_objects']['gender_pronouns']) {
+          return $data['custom_objects']['gender_pronouns'];
+        } else {
+          return null;
+        }
  
       case 'photo':
         return $data['photo'];
@@ -245,7 +250,7 @@ class Namecoach extends MediaSourceBase {
    *   The NameCoach key.
    *
    * @return array
-   *   An array of oembed data.
+   *   An array of namecoach record data.
    */
 
   protected function ncSearch($keymail) {
@@ -274,6 +279,13 @@ class Namecoach extends MediaSourceBase {
       }
     }
     return $this->namecoach;
+  }
+
+
+  public function getSourceFieldConstraints() {
+    return [
+      'namecoach' => [],
+    ];
   }
 
 

@@ -1,0 +1,67 @@
+uuid: 25e8cd70-8099-4275-ba48-651806821574
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.ief_abbreviated
+    - field.field.media.nc_remote.field_media_namecoach_audio_url
+    - field.field.media.nc_remote.field_media_namecoach_email
+    - field.field.media.nc_remote.field_media_namecoach_emailkey
+    - field.field.media.nc_remote.field_media_namecoach_firstname
+    - field.field.media.nc_remote.field_media_namecoach_iframe_txt
+    - field.field.media.nc_remote.field_media_namecoach_lastname
+    - field.field.media.nc_remote.field_media_namecoach_notes
+    - field.field.media.nc_remote.field_media_namecoach_page_link
+    - field.field.media.nc_remote.field_media_namecoach_phonetic
+    - field.field.media.nc_remote.field_media_namecoach_photo_url
+    - field.field.media.nc_remote.field_media_namecoach_player_txt
+    - field.field.media.nc_remote.field_media_namecoach_pronouns
+    - field.field.media.nc_remote.field_media_namecoach_uuid
+    - media.type.nc_remote
+  enforced:
+    module:
+      - media_source_namecoach
+_core:
+  default_config_hash: zy33UGqW4iM6jWfOmSvF5q4HgFF-Z8caxHvpylEPpKY
+id: media.nc_remote.ief_abbreviated
+targetEntityType: media
+bundle: nc_remote
+mode: ief_abbreviated
+content:
+  field_media_namecoach_emailkey:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: your.email@yale.edu
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_namecoach_audio_url: true
+  field_media_namecoach_email: true
+  field_media_namecoach_firstname: true
+  field_media_namecoach_iframe_txt: true
+  field_media_namecoach_lastname: true
+  field_media_namecoach_notes: true
+  field_media_namecoach_page_link: true
+  field_media_namecoach_phonetic: true
+  field_media_namecoach_photo_url: true
+  field_media_namecoach_player_txt: true
+  field_media_namecoach_pronouns: true
+  field_media_namecoach_uuid: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

@@ -1,0 +1,9 @@
+status: 1
+pattern: '[media:field_media_namecoach_lastname] - [media:field_media_namecoach_emailkey]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - media.type.nc_remote
