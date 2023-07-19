@@ -141,7 +141,7 @@ class AssociateNamecoachRecordAction extends ViewsBulkOperationsActionBase imple
   /**
    * {@inheritdoc}
    */
-  public function buildPreConfigurationForm(array $form, array $values, FormStateInterface $form_state) {
+  public function buildPreConfigurationForm(array $form, array $values, FormStateInterface $form_state) : array {
 
     $form['nc_skipdate'] = [
       '#type' => 'select',

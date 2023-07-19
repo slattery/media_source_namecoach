@@ -1,0 +1,6 @@
+{
+  "name": "slattery/media_source_namecoach",
+  "description": "Media source and media type for the namecoach API.",
+  "type": "drupal-custom-module",
+  "license": "GPL-2.0-or-later"
+}
